@@ -1,0 +1,146 @@
+{
+    "water": {
+        "el1": "",
+        "el2": "",
+        "icon": "💧",
+        "discovered": true
+    },
+    "fire": {
+        "el1": "",
+        "el2": "",
+        "icon": "🔥",
+        "discovered": true
+    },
+    "earth": {
+        "el1": "",
+        "el2": "",
+        "icon": "🌍",
+        "discovered": true
+    },
+    "wind": {
+        "el1": "",
+        "el2": "",
+        "icon": "🍃",
+        "discovered": true
+    },
+    "cloud": {
+        "el1": "wind",
+        "el2": "wind",
+        "icon": "☁️",
+        "discovered": false
+    },
+    "storm": {
+        "el1": "cloud",
+        "el2": "cloud",
+        "icon": "🌩️",
+        "discovered": false
+    },
+    "rain": {
+        "el1": "cloud",
+        "el2": "water",
+        "icon": "🌧️",
+        "discovered": false
+    },
+    "tornado": {
+        "el1": "storm",
+        "el2": "storm",
+        "icon": "🌪️",
+        "discovered": false
+    },
+    "ocean_cyclone": {
+        "el1": "tornado",
+        "el2": "ocean",
+        "icon": "🌪️🌊",
+        "discovered": false
+    },
+    "stone": {
+        "el1": "water",
+        "el2": "fire",
+        "icon": "🪨",
+        "discovered": false
+    },
+    "giant_stone": {
+        "el1": "stone",
+        "el2": "stone",
+        "icon": "🪨❗",
+        "discovered": false
+    },
+    "meteor": {
+        "el1": "giant_stone",
+        "el2": "giant_stone",
+        "icon": "☄️",
+        "discovered": false
+    },
+    "plant": {
+        "el1": "water",
+        "el2": "earth",
+        "icon": "🌱",
+        "discovered": false
+    },
+    "wood": {
+        "el1": "water",
+        "el2": "plant",
+        "icon": "🪵",
+        "discovered": false
+    },
+    "forest": {
+        "el1": "wood",
+        "el2": "wood",
+        "icon": "🌲",
+        "discovered": false
+    },
+    "island": {
+        "el1": "forest",
+        "el2": "forest",
+        "icon": "🏝️",
+        "discovered": false
+    },
+    "sea": {
+        "el1": "water",
+        "el2": "water",
+        "icon": "🏞️",
+        "discovered": false
+    },
+    "ocean": {
+        "el1": "sea",
+        "el2": "sea",
+        "icon": "🌅",
+        "discovered": false
+    },
+    "tsunami": {
+        "el1": "ocean",
+        "el2": "ocean",
+        "icon": "🌊",
+        "discovered": false
+    },
+    "flood": {
+        "el1": "tsunami",
+        "el2": "tsunami",
+        "icon": "🌊❗",
+        "discovered": false
+    },
+    "lava": {
+        "el1": "fire",
+        "el2": "fire",
+        "icon": "🌋",
+        "discovered": false
+    },
+    "lava_stone": {
+        "el1": "fire",
+        "el2": "stone",
+        "icon": "♨️",
+        "discovered": false
+    },
+    "volcano": {
+        "el1": "lava",
+        "el2": "lava",
+        "icon": "🌋",
+        "discovered": false
+    },
+    "volcano_lava": {
+        "el1": "volcano",
+        "el2": "volcano",
+        "icon": "🌋",
+        "discovered": false
+    }
+}
