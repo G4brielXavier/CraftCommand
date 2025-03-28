@@ -2,145 +2,145 @@
     "water": {
         "el1": "",
         "el2": "",
-        "icon": "💧",
+        "icon": "\ud83d\udca7",
         "discovered": true
     },
     "fire": {
         "el1": "",
         "el2": "",
-        "icon": "🔥",
+        "icon": "\ud83d\udd25",
         "discovered": true
     },
     "earth": {
         "el1": "",
         "el2": "",
-        "icon": "🌍",
+        "icon": "\ud83c\udf0d",
         "discovered": true
     },
     "wind": {
         "el1": "",
         "el2": "",
-        "icon": "🍃",
+        "icon": "\ud83c\udf43",
         "discovered": true
     },
     "cloud": {
         "el1": "wind",
         "el2": "wind",
-        "icon": "☁️",
-        "discovered": false
+        "icon": "\u2601\ufe0f",
+        "discovered": true
     },
     "storm": {
         "el1": "cloud",
         "el2": "cloud",
-        "icon": "🌩️",
-        "discovered": false
+        "icon": "\ud83c\udf29\ufe0f",
+        "discovered": true
     },
     "rain": {
         "el1": "cloud",
         "el2": "water",
-        "icon": "🌧️",
-        "discovered": false
+        "icon": "\ud83c\udf27\ufe0f",
+        "discovered": true
     },
     "tornado": {
         "el1": "storm",
         "el2": "storm",
-        "icon": "🌪️",
-        "discovered": false
+        "icon": "\ud83c\udf2a\ufe0f",
+        "discovered": true
     },
     "ocean_cyclone": {
         "el1": "tornado",
         "el2": "ocean",
-        "icon": "🌪️🌊",
+        "icon": "\ud83c\udf2a\ufe0f\ud83c\udf0a",
         "discovered": false
     },
     "stone": {
         "el1": "water",
         "el2": "fire",
-        "icon": "🪨",
+        "icon": "\ud83e\udea8",
         "discovered": false
     },
     "giant_stone": {
         "el1": "stone",
         "el2": "stone",
-        "icon": "🪨❗",
+        "icon": "\ud83e\udea8\u2757",
         "discovered": false
     },
     "meteor": {
         "el1": "giant_stone",
         "el2": "giant_stone",
-        "icon": "☄️",
+        "icon": "\u2604\ufe0f",
         "discovered": false
     },
     "plant": {
         "el1": "water",
         "el2": "earth",
-        "icon": "🌱",
+        "icon": "\ud83c\udf31",
         "discovered": false
     },
     "wood": {
         "el1": "water",
         "el2": "plant",
-        "icon": "🪵",
+        "icon": "\ud83e\udeb5",
         "discovered": false
     },
     "forest": {
         "el1": "wood",
         "el2": "wood",
-        "icon": "🌲",
+        "icon": "\ud83c\udf32",
         "discovered": false
     },
     "island": {
         "el1": "forest",
         "el2": "forest",
-        "icon": "🏝️",
+        "icon": "\ud83c\udfdd\ufe0f",
         "discovered": false
     },
     "sea": {
         "el1": "water",
         "el2": "water",
-        "icon": "🏞️",
+        "icon": "\ud83c\udfde\ufe0f",
         "discovered": false
     },
     "ocean": {
         "el1": "sea",
         "el2": "sea",
-        "icon": "🌅",
+        "icon": "\ud83c\udf05",
         "discovered": false
     },
     "tsunami": {
         "el1": "ocean",
         "el2": "ocean",
-        "icon": "🌊",
+        "icon": "\ud83c\udf0a",
         "discovered": false
     },
     "flood": {
         "el1": "tsunami",
         "el2": "tsunami",
-        "icon": "🌊❗",
+        "icon": "\ud83c\udf0a\u2757",
         "discovered": false
     },
     "lava": {
         "el1": "fire",
         "el2": "fire",
-        "icon": "🌋",
+        "icon": "\ud83c\udf0b",
         "discovered": false
     },
     "lava_stone": {
         "el1": "fire",
         "el2": "stone",
-        "icon": "♨️",
+        "icon": "\u2668\ufe0f",
         "discovered": false
     },
     "volcano": {
         "el1": "lava",
         "el2": "lava",
-        "icon": "🌋",
+        "icon": "\ud83c\udf0b",
         "discovered": false
     },
     "volcano_lava": {
         "el1": "volcano",
         "el2": "volcano",
-        "icon": "🌋",
+        "icon": "\ud83c\udf0b",
         "discovered": false
     }
 }

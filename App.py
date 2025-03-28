@@ -16,7 +16,9 @@ def get_relative_path(file):
 from src.utils.CLIket import CLIket
 
 filepath = get_relative_path("src/data/elements.json")
-cliket = CLIket(filepath)
+configpath = get_relative_path("src/config/config.json")
+
+cliket = CLIket(filepath, configpath)
 cliket.Home()
 
 while cliket.on:

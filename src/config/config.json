@@ -1,0 +1,13 @@
+{
+    "name": "Craft Command",
+    "version": "V2",
+    "creator": ["dotxavierket"],
+    "commands": {
+        "!rs": "clear terminal",
+        "!l": "leave the terminal",
+        "!view_all": "show all icon elements and name elements",
+        "!view_name": "show one element by your name",
+        "!help": "show all commands that you can use",
+        "!creator": "show the creator"
+    }
+}

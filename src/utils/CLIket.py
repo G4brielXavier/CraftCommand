@@ -1,59 +1,47 @@
-import re
-from os import system, path
-import json
+import re, os, json
 
+# importing Merger
 from .Merger import Merger
 
+# instanciating Merger
 merger = Merger()
 
 
 
 class CLIket:
-    def __init__(self, filePath):
+    def __init__(self, filePath, configPath):
         self.patternCommandMerge = r'([A-Za-z]{1,}) \+ ([A-Za-z]{1,})'
         self.patternCommand = r'\!+.'
         
         self.filePath = filePath
+        self.configPath = configPath
         
         self.base = ">"
         self.on = True
         
-    
-    def GetElements(self):
-        with open(self.filePath, 'r', encoding='utf-8') as file:
+    # get all elements in the JSON FILE
+    def GetElements(self, path):
+        with open(path, 'r', encoding='utf-8') as file:
             data = json.load(file)
-            return data    
+            return data 
+        
+        
+           
+        
+        
         
     def Home(self):
-        system('cls')
-        print('<>' + ('-'*30) + '< Craft Command V1 >' + (30*'-') + '<>')
+        os.system('title CraftCommand')
+        os.system('cls')
+        print('<>' + ('-'*30) + '< Craft Command V2 >' + (30*'-') + '<>')
         print()
-        print(f'!rs: clear all')
-        print(f'!l: leave')
+        print('!help: to view all comands that you can use.')
         print()
-               
-    def IfWantToLeave(self):
-        try:
-            
-            option = input('Leave now? [ Y / n ]: ')
-
-            if option == 'Y':
-                self.on = False
-            elif option == 'n':
-                self.on = True
-                self.Home()
-            else:
-                print()
-                print('Invalid Value: It just can be "Y" or "n", obeying the uppercase and lowercase.')
-                self.IfWantToLeave()    
-            
-            
-        except:
-            self.Home()
-            pass
         
-    def View(self):
-        elements = self.GetElements()
+        
+    # view all elements for name
+    def view_name(self):
+        elements = self.GetElements(self.filePath)
         
         try:
             name_element = input('~ element_name: ').lower()            
@@ -68,6 +56,29 @@ class CLIket:
             self.Home()
             print(f'Ops!, Ocorreu um erro')
          
+    
+    def view_all(self):
+        elements = self.GetElements(self.filePath)
+        
+        print()
+        
+        for k, v in elements.items():
+            print(f'{v['icon']}  {k}')      
+            
+        print()
+        
+    
+    def help(self):
+        configInfo = self.GetElements(self.configPath)
+        commands = configInfo['commands']
+        
+        print()
+        for k, v in commands.items():
+            print(f'{k}: {v}')
+        print()
+
+     
+         
     def asker(self) -> str:
         try:
             return input(f'{self.base} ')
@@ -77,25 +88,33 @@ class CLIket:
                     
     def listener(self, ask: str):
         if re.match(self.patternCommand, ask) is not None:
-            match(ask):
-                case '!view':
-                    self.View()
+            match(ask):     
+                case '!help':
+                    self.help()    
+                case '!view_all':
+                    self.view_all()       
+                case '!view_name':
+                    self.view_name()
                 case '!l':
-                    self.IfWantToLeave()
+                    self.on = False
                 case '!rs':
-                    system('cls')
+                    os.system('cls')
                     self.Home()
+                case '!creator':
+                    print("Hi, I'm Gabriel Xavier(Dotket). I created Craft Command inspired by Neal Fun's Infinity Craft. So, all rights reserved to https://neal.fun")
+                    
             
                        
         if re.match(self.patternCommandMerge, ask) is not None:
             stringMatched = re.match(self.patternCommandMerge, ask)
             
-            merger.elements = self.GetElements()
+            merger.elements = self.GetElements(self.filePath)
             merger.filePath = self.filePath
             
             merger.makeMerger(stringMatched.group(1), stringMatched.group(2))
             
-            
+        
+        
         
                 
 
