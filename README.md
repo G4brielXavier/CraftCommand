@@ -1,5 +1,6 @@
-# Craft Command [Alfa]
+# Craft Command [V2]
 **Craft Command** is a system like the Infinite Craft but in Terminal, Just it.
+
 
 
 ### System Commands
