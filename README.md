@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Craft Command
+=======
+# Craft Command [V2]
+>>>>>>> 65207002b0c9f887d57723b80d859c353d225fa5
 **Craft Command** is a system like the Infinite Craft but in Terminal, Just it.
+
 
 
 ### System Commands
