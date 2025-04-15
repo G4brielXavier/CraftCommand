@@ -5,7 +5,7 @@
 >>>>>>> 65207002b0c9f887d57723b80d859c353d225fa5
 **Craft Command** is a system like the Infinite Craft but in Terminal, Just it.
 
-
+![CraftCommandCLI Screenshot](./src/assets/scree.png)
 
 ### System Commands
 
@@ -40,3 +40,6 @@ and if the *element_1* and *element_2* exists, so, the merge will work.
 
 
 I inspired in [InfinityCraft](https://neal.fun/infinite-craft/) to do it.
+
+
+
