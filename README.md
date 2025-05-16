@@ -36,10 +36,4 @@ and if the *element_1* and *element_2* exists, so, the merge will work.
 ```
 
 
-I inspired in [InfinityCraft](https://neal.fun/infinite-craft/) to do it.
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> e479bb490bff367cb0043486d84776b4406c2b66
+I inspired in [InfinityCraft](https://neal.fun/infinite-craft/).
